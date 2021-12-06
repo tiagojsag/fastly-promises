@@ -1,5 +1,3 @@
-'use strict';
-
 const nock = require('nock');
 const expect = require('expect');
 const config = require('../src/config');
@@ -23,7 +21,7 @@ describe('#readDomains', () => {
   });
   
   it('response body should exist', () => {
-    expect(res.data).toExist();
+    expect(res.data).toBeTruthy();
   });
 
   it('response body should be an array', () => {
@@ -32,13 +30,13 @@ describe('#readDomains', () => {
 
   it('response body should be an array of objects', () => {
     res.data.forEach(item => {
-      expect(item).toBeA('object');
+      expect(typeof item).toBe('object');
     });
   });
 
   it('response body should contain all properties', () => {
     res.data.forEach(item => {
-      expect(item).toIncludeKeys(['comment', 'name', 'service_id', 'version']);
+      expect(Object.keys(item)).toEqual(['comment', 'name', 'service_id', 'version']);
     });
   });
 });

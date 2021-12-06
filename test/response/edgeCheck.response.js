@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports.edgeCheck = [
   {
     'hash': 'c6447943be2cff04787d9367ddd58fa0',

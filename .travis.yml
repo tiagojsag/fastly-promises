@@ -5,16 +5,10 @@ cache:
 notifications:
   email: false
 node_js:
-  - '8'
-  - '7'
-before_script:
-  - npm prune
+  - '12'
 script:
-  - npm run test
-  - npm run check-coverage
-after_success:
-  - npm run report-coverage
-  - npm run semantic-release
+  - yarn test
+  - yarn coverage
 branches:
   only:
-    - master
+    - main

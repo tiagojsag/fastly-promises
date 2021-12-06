@@ -4,5 +4,6 @@
 /* NPM */
 /node_modules
 
-/* Istanbul */
+/* NYC */
 /coverage
+/.nyc_output

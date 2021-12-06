@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports.updateBackend = {
   'max_tls_version': null,
   'ssl_client_cert': null,

@@ -2,13 +2,7 @@
 
 > Promise based Fastly API client for Node.js
 
-[![travis build](https://img.shields.io/travis/philippschulte/fastly-promises.svg?style=flat-square)](https://travis-ci.org/philippschulte/fastly-promises)
-[![codecov coverage](https://img.shields.io/codecov/c/github/philippschulte/fastly-promises.svg?style=flat-square)](https://codecov.io/gh/philippschulte/fastly-promises)
-[![npm version](https://img.shields.io/npm/v/fastly-promises.svg?style=flat-square)](https://npm.im/fastly-promises)
-[![npm downloads](https://img.shields.io/npm/dm/fastly-promises.svg?style=flat-square)](https://npm.im/fastly-promises)
-[![npm license](https://img.shields.io/npm/l/fastly-promises.svg?style=flat-square)](LICENSE)
-
-[![NPM](https://nodei.co/npm/fastly-promises.png)](https://nodei.co/npm/fastly-promises/)
+Forked from [Philipp Schulte](https://github.com/philippschulte/fastly-promises)
 
 ## Problem
 
@@ -706,4 +700,4 @@ $ npm run commit
 
 ## License
 
-Licensed under the [MIT License](LICENSE) © 2017 Philipp Schulte
+Licensed under the [MIT License](LICENSE) © 2021 Tiago Garcia

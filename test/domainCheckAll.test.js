@@ -1,5 +1,3 @@
-'use strict';
-
 const nock = require('nock');
 const expect = require('expect');
 const config = require('../src/config');
@@ -23,7 +21,7 @@ describe('#domainCheckAll', () => {
   });
   
   it('response body should exist', () => {
-    expect(res.data).toExist();
+    expect(res.data).toBeTruthy();
   });
 
   it('response body should be an array', () => {

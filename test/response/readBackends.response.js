@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports.readBackends = [
   {
     'max_tls_version': null,

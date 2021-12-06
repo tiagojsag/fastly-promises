@@ -1,18 +1,15 @@
 {
-  "name": "fastly-promises",
-  "version": "0.0.0-semantically-released",
+  "name": "@tiagojsag/fastly-promises",
+  "version": "1.0.0",
   "description": "Promise based Fastly API client for Node.js",
   "main": "src/index.js",
   "scripts": {
-    "commit": "git-cz",
-    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
-    "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "test": "istanbul cover _mocha test",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "coverage": "nyc mocha",
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philippschulte/fastly-promises.git"
+    "url": "https://github.com/tiagojsag/fastly-promises.git"
   },
   "keywords": [
     "fastly",
@@ -21,35 +18,25 @@
     "client",
     "cdn"
   ],
-  "author": "Philipp Schulte <philipp.schulte@ymail.com> (http://www.philippschulte.com)",
+  "author": "Tiago Garcia",
+  "contributors": [
+    "Philipp Schulte"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/philippschulte/fastly-promises/issues"
+    "url": "https://github.com/tiagojsag/fastly-promises/issues"
   },
-  "homepage": "https://github.com/philippschulte/fastly-promises#readme",
+  "homepage": "https://github.com/tiagojsag/fastly-promises#readme",
   "engines": {
-    "node": ">=7.6.0"
+    "node": ">=12"
   },
   "devDependencies": {
-    "codecov.io": "0.1.6",
-    "commitizen": "2.9.6",
-    "cz-conventional-changelog": "2.0.0",
-    "expect": "1.20.2",
-    "ghooks": "2.0.0",
-    "istanbul": "0.4.5",
-    "mocha": "3.5.0",
-    "nock": "9.1.6",
-    "semantic-release": "^6.3.6"
+    "expect": "27.4.2",
+    "nyc": "15.1.0",
+    "mocha": "9.1.3",
+    "nock": "13.2.1"
   },
   "dependencies": {
-    "axios": "0.21.4"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    },
-    "ghooks": {
-      "pre-commit": "npm run test && npm run check-coverage"
-    }
+    "axios": "0.24.0"
   }
 }

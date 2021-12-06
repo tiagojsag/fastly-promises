@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports.readVersions = [
   {
     'active': true,

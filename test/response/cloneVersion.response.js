@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports.cloneVersion = {
   'testing': false,
   'locked': false,

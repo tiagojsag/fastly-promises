@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports.createSnippet = {
   'name': 'my_snippet',
   'priority': '10',

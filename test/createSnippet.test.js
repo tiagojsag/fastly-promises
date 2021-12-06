@@ -1,5 +1,3 @@
-'use strict';
-
 const nock = require('nock');
 const expect = require('expect');
 const config = require('../src/config');
@@ -23,11 +21,11 @@ describe('#createSnippet', () => {
   });
 
   it('response body should exist', () => {
-    expect(res.data).toExist();
+    expect(res.data).toBeTruthy();
   });
 
   it('response body should be an object', () => {
-    expect(res.data).toBeA('object');
+    expect(typeof res.data).toBe('object');
   });
 
   it('response body properties should be created', () => {
@@ -38,7 +36,7 @@ describe('#createSnippet', () => {
   });
 
   it('response body should contain all properties', () => {
-    expect(res.data).toIncludeKeys([
+    expect(Object.keys(res.data)).toEqual([
       'name',
       'priority',
       'dynamic',
@@ -49,7 +47,7 @@ describe('#createSnippet', () => {
       'deleted_at',
       'created_at',
       'updated_at',
-      'id'      
+      'id'
     ]);
   });
 });

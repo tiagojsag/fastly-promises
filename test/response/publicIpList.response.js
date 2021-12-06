@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports.publicIpList = {
   'addresses': [
     '23.235.32.0/20',
